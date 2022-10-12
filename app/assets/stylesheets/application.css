@@ -52,3 +52,11 @@ body{
 h1{
    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
 }
+
+.b-container {
+    height: 90vh;
+}
+
+.top-space {
+    padding-top: 200px;
+}
