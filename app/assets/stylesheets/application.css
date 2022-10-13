@@ -87,3 +87,9 @@ input {
 .no-outline:focus {
         outline: none;
       }
+
+.expense img{
+    max-height: 200px;
+}
+
+
