@@ -1,14 +1,3 @@
-<p style="color: green"><%= notice %></p>
-<h1>Expenses</h1>
-<div id="expenses">
-  <% @expenses.each do |expense| %>
-    <%= render expense %>
-    <p>
-      <%= link_to "Show this expense", expense %>
-    </p>
-  <% end %>
-</div>
-<%= link_to "New expense", new_expense_path %>
 <div class="b-container bg-light">
   <div class="card text-center">
     <div class="card-header bg-primary bg-gradient">
@@ -18,29 +7,18 @@
             <h3 class = "text-light p-1"><i class="fa-solid fa-arrow-left"></i></h3>
           <% end %>
           <h4 class = "text-light p-1">EXPENSES</h4>
-          <%= link_to "Add", new_expense_path, class: "text-light text-decoration-none p-1" %>
+          <%= link_to "Add", new_category_expense_path, class: "text-light text-decoration-none p-1" %>
         </div>
       </div>
     </div>
-    <div class="card-body bg-light">
-      <div class="card mb-3">
-        <div class="row g-0 d-flex align-items-center">
-          <div class="col-4 expense">
-            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" 
-                  class="img-fluid rounded-start" 
-                  alt="...">
-          </div>
-          <div class="col-4">
-            <div class="card-body">
-              <h6 class="card-title">Card title</h6>
-              <p class="card-text"><small class="text-muted">14th April 2014</small></p>
-            </div>
-          </div>
-          <div class="col-4">
-            <p>$140</p>
-          </div>
-        </div>
-      </div>
+    <div class="card-body bg-light id="expenses"">
+      <p style="color: green"><%= notice %></p>
+      <% @expenses.each do |expense| %>
+        <%= render expense %>
+        <p>
+          <%= link_to "Show this expense", expense %>
+        </p>
+      <% end %>
     </div>
   </div>
 </div>
