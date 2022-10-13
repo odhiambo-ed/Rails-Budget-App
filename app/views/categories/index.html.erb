@@ -1,14 +1,24 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>Categories</h1>
 
-<div id="categories">
-  <% @categories.each do |category| %>
+
+<div id="categories" class="b-container bg-light">
+  <div class="card text-center">
+    <div class="card-header bg-primary bg-gradient">
+      <div class="row">
+        <div class="col-12 d-flex flex-row justify-content-between align-middle mt-3 pt-3">
+          <%= link_to root_path do %>
+            <h3 class = "text-light p-1"><i class="fa-solid fa-arrow-left"></i></h3>
+          <% end %>
+          <h4 class = "text-light p-1">CATEGORIES</h4>
+          <%= link_to "Add", new_category_path, class: "text-light text-decoration-none p-1" %>
+        </div>
+      </div>
+    </div>
+    <div class="card-body bg-light">
+    <p style="color: green"><%= notice %></p>
+      <% @categories.each do |category| %>
     <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
   <% end %>
+    </div>
+  </div>
 </div>
-
-<%= link_to "New category", new_category_path %>
