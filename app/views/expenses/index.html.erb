@@ -13,6 +13,9 @@
     </div>
     <div class="card-body bg-light id="expenses"">
       <p style="color: green"><%= notice %></p>
+      <h4>
+        <span class = "text-dark fs-bold">Total Expenditure Tracked: </span><span class = "text-success shadow">KSH <%= Expense.where(category_id: @id).reduce(0) { |sum, t| sum + t.amount } %></span>
+      </h4>
       <% @expenses.each do |expense| %>
         <%= render expense %>
         <p>
