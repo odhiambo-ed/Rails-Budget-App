@@ -1,6 +1,3 @@
-
-
-
 <div id="categories" class="b-container bg-light">
   <div class="card text-center">
     <div class="card-header bg-primary bg-gradient">
@@ -15,10 +12,19 @@
       </div>
     </div>
     <div class="card-body bg-light">
-    <p style="color: green"><%= notice %></p>
+      <p style="color: green"><%= notice %></p>
+      <% if @categories.empty? %>
+        <div class="card mb-3">
+          <div class="row g-0 d-flex justify-content-center align-items-center">
+            <div class="col-6">
+              <h5 class = "text-danger">Oops!! No categories added yet. Click on 'ADD' above and add more.</h5>
+            </div>
+          </div>
+        </div>
+      <% end %>
       <% @categories.each do |category| %>
-    <%= render category %>
-  <% end %>
+        <%= render category %>
+      <% end %>
     </div>
   </div>
 </div>
