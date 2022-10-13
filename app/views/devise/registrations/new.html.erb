@@ -33,7 +33,7 @@
           <%= f.password_field :password_confirmation, placeholder: "Confirm New Password", autocomplete: "new-password", class: "w-100" %>
         </div>
         <div class="actions form-group">
-          <%= f.submit "Log in", class: "btn btn-primary bg-gradient w-100"%>
+          <%= f.submit "Sign Up", class: "btn btn-primary bg-gradient w-100", data: { turbo: false } %>
         </div>
       </div>
     </div>
