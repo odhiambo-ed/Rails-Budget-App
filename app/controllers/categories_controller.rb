@@ -9,6 +9,8 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1 or /categories/1.json
   def show
+    @category = Category.find(params[:id])
+    @expenses = @category.expenses.order('created_at DESC')
   end
 
   # GET /categories/new

@@ -25,7 +25,7 @@ class ExpensesController < ApplicationController
   def create
     expense = Expense.new(expense_params)
     expense.user_id = current_user.id
-    redirect_to category_transactions_path(params[:expense][:category_id])
+    redirect_to category_expenses_path(params[:expense][:category_id])
     if expense.save
       flash[:notice] = 'transaction created successfully'
     else
