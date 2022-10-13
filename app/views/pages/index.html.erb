@@ -8,9 +8,9 @@
               <div class="col-12 d-flex flex-column">
                 <h2 class="text-center fs-bold mt-5 pt-5 mb-5 pb-5">BUDGET APP</h2>
                 <div class = "mt-7 pt-0">
-                  <button class="btn btn-primary btn-lg d-block w-100 mb-2" type="submit">LOGIN</button>
+                  <%= link_to 'LOGIN', new_user_session_path,  class: "btn btn-primary btn-lg d-block w-100 mb-2"  %>
                 </div>
-                <div class = "mx-auto"><span>SIGN UP</span></div>
+                <%= link_to 'SIGN UP', new_user_registration_path, class: "mx-auto text-decoration-none text-dark" %> 
               </div>
             </div>
           </div>
