@@ -3,22 +3,20 @@
     <div class="card-header bg-primary bg-gradient">
       <div class="row">
         <div class="col-12 d-flex flex-row justify-content-between align-middle mt-3 pt-3">
-          <%= link_to root_path do %>
-            <h3 class = "text-light p-1"><i class="fa-solid fa-arrow-left"></i></h3>
-          <% end %>
-          <h4 class = "text-light p-1">EXPENSES</h4>
           <%= link_to "Add", new_category_expense_path, class: "text-light text-decoration-none p-1" %>
+          <h4 class = "text-light p-1">EXPENSES</h4>
+          <%= link_to "", destroy_user_session_path, class: "fa fa-sign-out text-light text-decoration-none" %>
         </div>
       </div>
     </div>
     <div class="card-body bg-light id="expenses"">
-      <p style="color: green"><%= notice %></p>
+       <h5>
+      <span>Total Expenditure: </span><span class = "text-success shadow"><%= Expense.where(category_id: @id).reduce(0) { |sum, t| sum + t.amount }  %></span>
+      </h5>
       <% @expenses.each do |expense| %>
         <%= render expense %>
-        <p>
-          <%= link_to "Show this expense", expense %>
-        </p>
       <% end %>
+      <%= link_to "Back To Categories", categories_path, class: "text-decoration-none" %>
     </div>
   </div>
 </div>
