@@ -7,12 +7,17 @@
             <h3 class = "text-light p-1"><i class="fa-solid fa-arrow-left"></i></h3>
           <% end %>
           <h4 class = "text-light p-1">NEW EXPENSE</h4>
+<<<<<<< HEAD
           <%= link_to "Next", category_expenses_path, class: "text-light text-decoration-none p-1" %>
+=======
+          <%= link_to "Next", new_category_path, class: "text-light text-decoration-none p-1" %>
+>>>>>>> Development
         </div>
       </div>
     </div>
     <div class="card-body bg-light">
       <p style="color: green"><%= notice %></p>
+<<<<<<< HEAD
       <%= form_with(model: @expense, url: category_expenses_path) do |form| %>
         <% if @expense.errors.any? %>
           <div style="color: red">
@@ -43,6 +48,9 @@
           <%= form.submit class: "btn btn-success bg-gradient w-100"%>
         </div>
       <% end %>
+=======
+      <%= render "form", expense: @expense %>
+>>>>>>> Development
       <%= link_to "Back To Expenses", category_expenses_path, class: "text-decoration-none" %>
     </div>
   </div>

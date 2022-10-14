@@ -2,8 +2,7 @@ class ExpensesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @expenses = Expense.where(category_id: params[:category_id]).order('created_at DESC')
-    @id = params[:category_id]
+    @expenses = Expense.all
   end
 
   # GET /entities/1 or /entities/1.json
@@ -11,7 +10,7 @@ class ExpensesController < ApplicationController
 
   # GET /entities/new
   def new
-    @id = params[:category_id]
+    @expenses = Expense.new
   end
 
   # GET /entities/1/edit
@@ -20,12 +19,21 @@ class ExpensesController < ApplicationController
   # POST /entities or /entities.json
   def create
     @expense = Expense.new(expense_params)
+<<<<<<< HEAD
     @expense.user_id = current_user.id
     # @entity = Entity.new(entity_params)
 
     respond_to do |format|
       if @expense.save
         format.html { redirect_to categories_url, notice: 'Expense was successfully created.' }
+=======
+
+    respond_to do |format|
+      if @expense.save
+        format.html do
+          redirect_to category_expense_url(id: @expense.id), notice: 'Expense was successfully created.'
+        end
+>>>>>>> Development
         format.json { render :show, status: :created, location: @expense }
       else
         format.html { render :new, status: :unprocessable_entity }
