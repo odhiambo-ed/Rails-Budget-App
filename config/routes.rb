@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :categories, only:[:index, :new, :create] do
-    resources :expenses, only:[:index, :new, :create]
+  resources :categories do
+    resources :expenses
   end
 
   devise_for :users
