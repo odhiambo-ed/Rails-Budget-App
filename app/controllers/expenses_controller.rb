@@ -2,7 +2,8 @@ class ExpensesController < ApplicationController
     before_action :authenticate_user!
 
   def index
-    @expenses = Expense.all
+    @expenses = Expense.where(category_id: params[:category_id]).order('created_at DESC')
+    @id = params[:category_id]
   end
 
   # GET /entities/1 or /entities/1.json
@@ -10,7 +11,7 @@ class ExpensesController < ApplicationController
 
   # GET /entities/new
   def new
-    @expense = Expense.new
+    @id = params[:category_id]
   end
 
   # GET /entities/1/edit
@@ -18,7 +19,9 @@ class ExpensesController < ApplicationController
 
   # POST /entities or /entities.json
   def create
-    @expense = Expense.new(params.require(:expense).permit(:name, :amount, :user_id, :category_id))
+
+    @expense = Expense.new(expense_params)
+    @expense.user_id = current_user.id
     # @entity = Entity.new(entity_params)
 
     respond_to do |format|
@@ -65,5 +68,7 @@ class ExpensesController < ApplicationController
   # Only allow a list of trusted parameters through.
   def expense_params
     params.require(:expense).permit(:name, :amount, :user_id, :category_id)
+    # expense[:user_id] = current_user.id
+    # expense
   end
 end
