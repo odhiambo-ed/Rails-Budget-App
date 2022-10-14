@@ -11,7 +11,7 @@ RSpec.describe Expense, type: :model do
 
     @category.save
 
-     @expense = Expense.new(name: 'Cooking Oil', amount: 2000)
+    @expense = Expense.new(name: 'Cooking Oil', amount: 2000)
 
     @expense.save
 
