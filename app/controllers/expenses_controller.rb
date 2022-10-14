@@ -1,5 +1,5 @@
 class ExpensesController < ApplicationController
-    before_action :authenticate_user!
+  before_action :authenticate_user!
 
   def index
     @expenses = Expense.where(category_id: params[:category_id]).order('created_at DESC')
@@ -19,7 +19,6 @@ class ExpensesController < ApplicationController
 
   # POST /entities or /entities.json
   def create
-
     @expense = Expense.new(expense_params)
     @expense.user_id = current_user.id
     # @entity = Entity.new(entity_params)
