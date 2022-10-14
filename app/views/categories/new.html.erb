@@ -1,0 +1,20 @@
+<div id="categories" class="b-container bg-light">
+  <div class="card text-center">
+    <div class="card-header bg-primary bg-gradient">
+      <div class="row">
+        <div class="col-12 d-flex flex-row justify-content-between align-middle mt-3 pt-3">
+          <%= link_to categories_path do %>
+            <h3 class = "text-light p-1"><i class="fa-solid fa-arrow-left"></i></h3>
+          <% end %>
+          <h4 class = "text-light p-1">NEW CATEGORY</h4>
+          <%= link_to "Next", new_category_path, class: "text-light text-decoration-none p-1" %>
+        </div>
+      </div>
+    </div>
+    <div class="card-body bg-light">
+      <p style="color: green"><%= notice %></p>
+      <%= render "form", category: @category %>
+      <%= link_to "Back To Categories", categories_path, class: "text-decoration-none" %>
+    </div>
+  </div>
+</div>
