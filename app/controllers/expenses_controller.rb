@@ -11,7 +11,8 @@ class ExpensesController < ApplicationController
 
   # GET /entities/new
   def new
-   @id = params[:category_id]
+    @expense = Expense.new
+    @id = params[:category_id]
   end
 
   # GET /entities/1/edit
