@@ -3,16 +3,13 @@
     <div class="card-header bg-primary bg-gradient">
       <div class="row">
         <div class="col-12 d-flex flex-row justify-content-between align-middle mt-3 pt-3">
-          <%= link_to root_path do %>
-            <h3 class = "text-light p-1"><i class="fa-solid fa-arrow-left"></i></h3>
-          <% end %>
+         <%= link_to "Add", new_category_path, class: "text-light text-decoration-none p-1" %>
           <h4 class = "text-light p-1">CATEGORIES</h4>
-          <%= link_to "Add", new_category_path, class: "text-light text-decoration-none p-1" %>
+          <%= link_to "", destroy_user_session_path, class: "fa fa-sign-out text-light text-decoration-none" %>
         </div>
       </div>
     </div>
     <div class="card-body bg-light">
-      <p style="color: green"><%= notice %></p>
       <% if @categories.empty? %>
         <div class="card mb-3">
           <div class="row g-0 d-flex justify-content-center align-items-center">
@@ -25,7 +22,6 @@
       <% @categories.each do |category| %>
         <%= render category %>
       <% end %>
-      <%= link_to "Log out", destroy_user_session_path, class: "fa fa-sign-out d-inline-block pr-5" %>
     </div>
   </div>
 </div>
