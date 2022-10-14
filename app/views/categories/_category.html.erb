@@ -1,17 +1,18 @@
-<div id="<%= dom_id category %>">
-  <p>
-    <strong>Name:</strong>
-    <%= category.name %>
-  </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= category.icon %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= category.user_id %>
-  </p>
-
-</div>
+<%= link_to category_expenses_path(category.id), class: "text-decoration-none" do %>
+  <div id="<%= dom_id category %>" class="card mb-3">
+    <div class="row g-0 d-flex align-items-center">
+      <div class="col-4 expense">
+        <img src="<%= category.icon %>" class="img-fluid rounded-start" alt="icon">
+      </div>
+      <div class="col-4">
+        <div class="card-body">
+          <h6 class="card-title text-dark fs-bold"><%= category.name %></h6>
+          <p class="card-text"><small class="text-muted"><%= category.created_at.strftime("%d-%b-%Y")%></small></p>
+        </div>
+      </div>
+      <div class="col-4">
+        <p class = "text-success">KSH <%= Expense.where(category_id: category.id).sum(:amount) %></p>
+      </div>
+    </div>
+  </div>
+<% end %>

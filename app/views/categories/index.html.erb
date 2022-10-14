@@ -1,14 +1,30 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Categories</h1>
-
-<div id="categories">
-  <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
-  <% end %>
+<div id="categories" class="b-container bg-light">
+  <div class="card text-center">
+    <div class="card-header bg-primary bg-gradient">
+      <div class="row">
+        <div class="col-12 d-flex flex-row justify-content-between align-middle mt-3 pt-3">
+          <%= link_to root_path do %>
+            <h3 class = "text-light p-1"><i class="fa-solid fa-arrow-left"></i></h3>
+          <% end %>
+          <h4 class = "text-light p-1">CATEGORIES</h4>
+          <%= link_to "Add", new_category_path, class: "text-light text-decoration-none p-1" %>
+        </div>
+      </div>
+    </div>
+    <div class="card-body bg-light">
+      <p style="color: green"><%= notice %></p>
+      <% if @categories.empty? %>
+        <div class="card mb-3">
+          <div class="row g-0 d-flex justify-content-center align-items-center">
+            <div class="col-6">
+              <h5 class = "text-danger">Oops!! No categories added yet. Click on 'ADD' above and add more.</h5>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <% @categories.each do |category| %>
+        <%= render category %>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-<%= link_to "New category", new_category_path %>

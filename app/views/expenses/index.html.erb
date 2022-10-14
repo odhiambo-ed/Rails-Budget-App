@@ -1,14 +1,27 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Expenses</h1>
-
-<div id="expenses">
-  <% @expenses.each do |expense| %>
-    <%= render expense %>
-    <p>
-      <%= link_to "Show this expense", expense %>
-    </p>
-  <% end %>
+<div class="b-container bg-light">
+  <div class="card text-center">
+    <div class="card-header bg-primary bg-gradient">
+      <div class="row">
+        <div class="col-12 d-flex flex-row justify-content-between align-middle mt-3 pt-3">
+          <%= link_to root_path do %>
+            <h3 class = "text-light p-1"><i class="fa-solid fa-arrow-left"></i></h3>
+          <% end %>
+          <h4 class = "text-light p-1">EXPENSES</h4>
+          <%= link_to "Add", new_category_expense_path, class: "text-light text-decoration-none p-1" %>
+        </div>
+      </div>
+    </div>
+    <div class="card-body bg-light id="expenses"">
+      <p style="color: green"><%= notice %></p>
+      <h4>
+        <span class = "text-dark fs-bold">Total Expenditure Tracked: </span><span class = "text-success shadow">KSH <%= Expense.where(category_id: @id).reduce(0) { |sum, t| sum + t.amount } %></span>
+      </h4>
+      <% @expenses.each do |expense| %>
+        <%= render expense %>
+        <p>
+          <%= link_to "Show this expense", expense %>
+        </p>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-<%= link_to "New expense", new_expense_path %>
