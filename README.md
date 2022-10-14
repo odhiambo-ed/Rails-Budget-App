@@ -42,7 +42,7 @@ For more details, see [the Installation docs page](https://www.ruby-lang.org/en/
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!!
+Contributions, issues, and feature requests are welcome!!!
 
 Feel free to check the [issues page](https://github.com/white3d/Rails-Budget-App/issues)
 
