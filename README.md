@@ -15,10 +15,10 @@
 ## Screenshots
 
 <p float="left">
-  <img src="/b1.png" width="240" />
-  <img src="/b2.png" width="240" /> 
-  <img src="/b3.png" width="240" />
-  <img src="/b4.png" width="240" />
+  <img src="/b1.png" width="230" />
+  <img src="/b2.png" width="230" /> 
+  <img src="/b3.png" width="230" />
+  <img src="/b4.png" width="230" />
 </p>
 
 ## Demo Video
