@@ -2,6 +2,10 @@
 
 ![](https://media.giphy.com/media/wOvgSQVwgMRSUfgyxb/giphy.gif)
 
+<p align="center">
+  <img src="https://media.giphy.com/media/wOvgSQVwgMRSUfgyxb/giphy.gif" />
+</p>
+
 # Rails Budget App
 
 > Rails Budget App is an app build on Ruby on Rails. It is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
