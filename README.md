@@ -6,7 +6,7 @@
 
 ## Demo Video
 
-[Video Link](https://www.loom.com/share/ade2cd157e2946918b7f409d9047d5fa)
+[Video Link](https://loom.com/share/96758514a8f94be9b52ebe052f671c7c)
 
 ## Live Demo Link
 
