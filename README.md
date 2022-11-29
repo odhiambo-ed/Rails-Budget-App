@@ -1,7 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-![](https://media.giphy.com/media/wOvgSQVwgMRSUfgyxb/giphy.gif)
-
 <p align="center">
   <img src="https://media.giphy.com/media/wOvgSQVwgMRSUfgyxb/giphy.gif" />
 </p>
