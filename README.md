@@ -31,9 +31,9 @@
 
 ## Built With
 
-![Ruby](https://icongr.am/devicon/ruby-original.svg?size=50&color=currentColor)
-![Ruby on Rails](https://icongr.am/devicon/rails-original-wordmark.svg?size=50&color=currentColor)
-![Ruby](https://icongr.am/devicon/postgresql-original.svg?size=50&color=currentColor)
+![Ruby](https://icongr.am/devicon/ruby-original.svg?size=100&color=currentColor)
+![Ruby on Rails](https://icongr.am/devicon/rails-original-wordmark.svg?size=100&color=currentColor)
+![Ruby](https://icongr.am/devicon/postgresql-original.svg?size=100&color=currentColor)
 
 ## Get Started
 
