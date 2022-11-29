@@ -11,7 +11,7 @@
 ## Screenshots
 
 <p float="left">
-  <img src="/b1.png" width="100" />
+  <img src="/b1.png" width="250" />
   <img src="/b2.png" width="100" /> 
   <img src="/b3.png" width="100" />
   <img src="/b4.png" width="100" />
