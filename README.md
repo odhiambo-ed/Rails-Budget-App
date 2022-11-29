@@ -62,6 +62,10 @@ For more details, see [the Installation docs page](https://www.ruby-lang.org/en/
 
 👤 **Edward Odhiambo**
 
+<a href="https://github.com/white3d" target="blank"><img align="center"
+      src="https://github.com/white3d/GitHub-User-Content/blob/main/Passport_Ed-M.png"
+      alt="Edward" height="80" width="80"/></a> **Edward Odhiambo**
+
 - GitHub: [@whit3d](https://github.com/white3d)
 - Twitter: [@odhiambo_ed](https://twitter.com/odhiambo_ed)
 - LinkedIn: [Edward Odhiambo](https://www.linkedin.com/in/edward-odhiambo-6a462a21b/)
