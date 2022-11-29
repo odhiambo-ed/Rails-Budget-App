@@ -19,8 +19,8 @@
   <img src="/b4.png" width="400" />
 </p>
 <p float="left">
-  <img src="/b3.png" width="300" />
-  <img src="/b4.png" width="300" />
+  <img src="/b3.png" width="400" />
+  <img src="/b4.png" width="400" />
 </p>
 
 ## Demo Video
