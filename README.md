@@ -8,6 +8,15 @@
 
 > Rails Budget App is an app build on Ruby on Rails. It is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
+## Screenshots
+
+<p float="left">
+  <img src="/b1.png" width="100" />
+  <img src="/b2.png" width="100" /> 
+  <img src="/b3.png" width="100" />
+  <img src="/b4.png" width="100" />
+</p>
+
 ## Demo Video
 
 [Video Link](https://loom.com/share/96758514a8f94be9b52ebe052f671c7c)
