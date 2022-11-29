@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Rails Budget App
-
 ## Sneak Peek
 
 <p align="center">
   <img src="https://media.giphy.com/media/wOvgSQVwgMRSUfgyxb/giphy.gif" />
 </p>
+
+# Rails Budget App
 
 ## Description
 
