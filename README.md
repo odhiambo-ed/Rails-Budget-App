@@ -64,7 +64,8 @@ For more details, see [the Installation docs page](https://www.ruby-lang.org/en/
   <a href="https://github.com/white3d" target="blank"><img align="center"
         src="https://github.com/white3d/GitHub-User-Content/blob/main/Passport_Ed-M.png"
         alt="Edward" height="80" width="80"/></a> 
-
+</p>
+<p>
   **Edward Odhiambo**
 </p>
 
