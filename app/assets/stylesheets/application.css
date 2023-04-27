@@ -82,13 +82,27 @@ h1 {
   background-color: #3778c2;
 }
 
-input {
+/* input {
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
   background-color: #eee;
+} */
+
+.form-control.border-bottom {
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 0 0 2px 0;
 }
+
+.form-control.border-bottom:focus {
+  border-bottom-color: #007bff;
+  box-shadow: none;
+}
+
 
 .no-outline:focus {
   outline: none;
