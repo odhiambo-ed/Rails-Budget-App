@@ -13,15 +13,15 @@
 
   <div class = "mb-3" class = "mb-3">
     <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name, placeholder: "Enter Category Name", class: "w-100", placeholder: "Enter Category Name", class: "w-100" %>
+    <%= form.text_field :name, placeholder: "Enter Category Name", class: "w-100 form-control border-0 border-bottom", placeholder: "Enter Category Name", class: "w-100" %>
   </div>
 
   <div class = "mb-3" class = "mb-3">
     <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon, placeholder: "Paste Image Link", class: "w-100" %>
+    <%= form.text_field :icon, placeholder: "Paste Image Link", class: "w-100 form-control border-0 border-bottom" %>
   </div>
 
   <div class = "mb-3" class = "mb-3">
-    <%= form.submit class: "btn btn-success bg-gradient w-100"%>
+    <%= form.submit class: "form-control btn btn-success bg-gradient w-100"%>
   </div>
 <% end %>

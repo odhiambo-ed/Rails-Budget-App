@@ -12,14 +12,18 @@
     <script src="https://kit.fontawesome.com/46794738cc.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <% if notice %>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+      <div class="col-12 col-lg-4">
+        <% if notice %>
         <p class="alert alert-success"><%= notice %></p>
       <% end %>
       <% if alert %>
         <p class="alert alert-danger"><%= alert %></p>
       <% end %>
       <%= yield %>
+      </div>
+    </div>
     </div>
   </body>
 </html>

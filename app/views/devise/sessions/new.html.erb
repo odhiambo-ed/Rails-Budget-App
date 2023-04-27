@@ -14,13 +14,13 @@
     </div>
     <div class="card-body">
       <div class="field form-group mb-4">
-        <%= f.email_field :email, autofocus: true, placeholder: "Email", autocomplete: "email", class: "w-100" %>
+        <%= f.email_field :email, autofocus: true, placeholder: "Email", autocomplete: "email", class: "w-100 form-control border-0 border-bottom" %>
       </div>
       <div class="field mb-4">
-        <%= f.password_field :password, placeholder: "Password", autocomplete: "current-password", class: "w-100" %>
+        <%= f.password_field :password, placeholder: "Password", autocomplete: "current-password", class: "w-100 form-control border-0 border-bottom" %>
       </div>
       <div class="actions form-group">
-        <%= f.submit "Log in", class: "btn btn-primary bg-gradient w-100"%>
+        <%= f.submit "Log in", class: "form-control btn btn-primary bg-gradient w-100"%>
       </div>
     </div>
   </div>
